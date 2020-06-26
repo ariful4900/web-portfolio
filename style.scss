@@ -5,6 +5,8 @@ $Playfair:'Playfair Display', serif;
 $Raleway: 'Raleway', sans-serif;
 $Roboto:'Roboto', sans-serif;
 $halfWidth:40%;
+$textCenter:center;
+$textJustify:justify;
 %default-MarPad {
     margin: 0;
     padding: 0;
@@ -13,10 +15,17 @@ $halfWidth:40%;
     width:100%;
     height: 100%;
 }
+%buttonBG{
+    background-image: linear-gradient(to right, lightSalmon, tomato);
+}
+a, a:hover{
+    text-decoration: none;
+}
 body{
   font-family: $Oswald;  
   font-size: 14px;
   @extend %default-MarPad;
+ 
 }
 h1{
     @extend %default-MarPad;
@@ -27,6 +36,38 @@ h1{
         color:rgb(255, 102, 0)
     }
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    margin: 0 auto;
+}
+.logoArea{
+    img{
+        @extend %imgWidhigh;
+        height: 70px;
+        width: 70px;
+    }
+    a{
+        font-family: $Playfair;
+        font-size: 70px;
+        font-weight: 800;
+        color:rgb(27, 56, 3)
+    }
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    @extend %default-MarPad;
+    li{
+        list-style: none;
+        a{
+            margin: 0 10px;
+            padding:10px;
+        }
+    }
+}
 .half-width{
     width:$halfWidth;
     float: left;
@@ -34,5 +75,27 @@ h1{
     padding: 2%;
     img{
         @extend %imgWidhigh;
+    }
+}
+.topBanner{
+    background-image:url("../images/top-banner.png");
+    background-repeat: no-repeat;
+
+}
+section{
+    height: 400px;
+    text-align: $textJustify;
+    a{
+        @extend %buttonBG;
+        border:none;
+        width:200px;
+        padding: 10px 0;
+        border-radius: 10px;
+        color:#fff;
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: $textCenter;
+        text-transform: uppercase;
     }
 }
