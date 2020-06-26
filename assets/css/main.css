@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Playfair+Display&family=Raleway&family=Roboto&display=swap");
-body, h1 {
+body, h1, nav ul {
   margin: 0;
   padding: 0; }
 
-.half-width img {
+.logoArea img, .half-width img {
   width: 100%;
   height: 100%; }
+
+section a {
+  background-image: linear-gradient(to right, lightSalmon, tomato); }
+
+a, a:hover {
+  text-decoration: none; }
 
 body {
   font-family: "Oswald", sans-serif;
@@ -18,10 +24,54 @@ h1 {
   h1 span.name_highlight {
     color: #ff6600; }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto; }
+
+.logoArea img {
+  height: 70px;
+  width: 70px; }
+.logoArea a {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 800;
+  color: #1b3803; }
+
+nav ul {
+  display: flex;
+  align-items: center; }
+  nav ul li {
+    list-style: none; }
+    nav ul li a {
+      margin: 0 10px;
+      padding: 10px; }
+
 .half-width {
   width: 40%;
   float: left;
   margin-left: 5%;
   padding: 2%; }
+
+.topBanner {
+  background-image: url("../images/top-banner.png");
+  background-repeat: no-repeat; }
+
+section {
+  height: 400px;
+  text-align: justify; }
+  section a {
+    border: none;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
