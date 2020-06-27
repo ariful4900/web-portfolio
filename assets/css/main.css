@@ -21,8 +21,9 @@ h1 {
   font-size: 50px;
   color: #021d02;
   font-family: "Roboto", sans-serif; }
-  h1 span.name_highlight {
-    color: #ff6600; }
+
+.name_highlight {
+  color: #ff6600; }
 
 header {
   display: flex;
@@ -38,7 +39,7 @@ header {
   font-family: "Playfair Display", serif;
   font-size: 70px;
   font-weight: 800;
-  color: #1b3803; }
+  color: #265d0c; }
 
 nav ul {
   display: flex;
@@ -54,6 +55,13 @@ nav ul {
   float: left;
   margin-left: 5%;
   padding: 2%; }
+  .half-width p {
+    font-family: "Open Sans", sans-serif;
+    color: #25300f; }
+
+h2 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif; }
 
 .topBanner {
   background-image: url("../images/top-banner.png");
@@ -61,7 +69,8 @@ nav ul {
 
 section {
   height: 400px;
-  text-align: justify; }
+  text-align: justify;
+  padding-bottom: 100px; }
   section a {
     border: none;
     width: 200px;
@@ -73,5 +82,13 @@ section {
     display: inline-block;
     text-align: center;
     text-transform: uppercase; }
+
+.dreamArea {
+  background-image: url("../images/dream-bg.png");
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.experienceArea h2 {
+  text-align: left; }
 
 /*# sourceMappingURL=main.css.map */
