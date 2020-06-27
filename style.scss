@@ -6,6 +6,7 @@ $Raleway: 'Raleway', sans-serif;
 $Roboto:'Roboto', sans-serif;
 $halfWidth:40%;
 $textCenter:center;
+$textLeft:left;
 $textJustify:justify;
 %default-MarPad {
     margin: 0;
@@ -32,9 +33,10 @@ h1{
     font-size: 50px;
     color:rgb(2, 29, 2);
     font-family:$Roboto ;
-    span.name_highlight{
-        color:rgb(255, 102, 0)
-    }
+   
+}
+.name_highlight{
+    color:rgb(255, 102, 0)
 }
 header{
     display: flex;
@@ -53,7 +55,7 @@ header{
         font-family: $Playfair;
         font-size: 70px;
         font-weight: 800;
-        color:rgb(27, 56, 3)
+        color:#265d0c
     }
 }
 nav ul{
@@ -76,6 +78,17 @@ nav ul{
     img{
         @extend %imgWidhigh;
     }
+   
+    p{
+        font-family: $openSan;
+        color: rgb(37, 48, 15)
+    }
+}
+h2{
+    font-size: 30px;
+    font-family: $Roboto;
+
+
 }
 .topBanner{
     background-image:url("../images/top-banner.png");
@@ -85,6 +98,7 @@ nav ul{
 section{
     height: 400px;
     text-align: $textJustify;
+    padding-bottom: 100px;
     a{
         @extend %buttonBG;
         border:none;
@@ -97,5 +111,15 @@ section{
         display: inline-block;
         text-align: $textCenter;
         text-transform: uppercase;
+    }
+}
+.dreamArea{
+    background-image: url("../images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.experienceArea{
+    h2{
+        text-align: $textLeft;
     }
 }
