@@ -1,111 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Playfair+Display&family=Raleway&family=Roboto&display=swap');
-$openSan:'Open Sans', sans-serif;
-$Oswald:'Oswald', sans-serif;
-$Playfair:'Playfair Display', serif;
-$Raleway: 'Raleway', sans-serif;
-$Roboto:'Roboto', sans-serif;
-$halfWidth:40%;
-$textCenter:center;
-$textLeft:left;
-$textJustify:justify;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Playfair+Display&family=Raleway&family=Roboto&display=swap");
+$openSan: "Open Sans", sans-serif;
+$Oswald: "Oswald", sans-serif;
+$Playfair: "Playfair Display", serif;
+$Raleway: "Raleway", sans-serif;
+$Roboto: "Roboto", sans-serif;
+$halfWidth: 40%;
+$textCenter: center;
+$textLeft: left;
+$textJustify: justify;
 %default-MarPad {
     margin: 0;
     padding: 0;
 }
-%imgWidhigh{
-    width:100%;
+%imgWidhigh {
+    width: 100%;
     height: 100%;
 }
-%buttonBG{
+%buttonBG {
     background-image: linear-gradient(to right, lightSalmon, tomato);
 }
-a, a:hover{
+%singleBoder {
+    border-left: 7px solid;
+    border-image-slice: 1;
+}
+a,
+a:hover {
     text-decoration: none;
 }
-body{
-  font-family: $Oswald;  
-  font-size: 14px;
-  @extend %default-MarPad;
- 
+body {
+    font-family: $Oswald;
+    font-size: 14px;
+    @extend %default-MarPad;
 }
-h1{
+h1 {
     @extend %default-MarPad;
     font-size: 50px;
-    color:rgb(2, 29, 2);
-    font-family:$Roboto ;
-   
+    color: rgb(2, 29, 2);
+    font-family: $Roboto;
 }
-.name_highlight{
-    color:rgb(255, 102, 0)
+.name_highlight {
+    color: rgb(255, 102, 0);
 }
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:90%;
+    width: 90%;
     margin: 0 auto;
 }
-.logoArea{
-    img{
+.logoArea {
+    img {
         @extend %imgWidhigh;
         height: 70px;
         width: 70px;
     }
-    a{
+    a {
         font-family: $Playfair;
         font-size: 70px;
         font-weight: 800;
-        color:#265d0c
+        color: #265d0c;
     }
 }
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     @extend %default-MarPad;
-    li{
+    li {
         list-style: none;
-        a{
+        a {
             margin: 0 10px;
-            padding:10px;
+            padding: 10px;
         }
     }
 }
-.half-width{
-    width:$halfWidth;
+.half-width {
+    width: $halfWidth;
     float: left;
     margin-left: 5%;
     padding: 2%;
-    img{
+    img {
         @extend %imgWidhigh;
     }
-   
-    p{
+
+    p {
         font-family: $openSan;
-        color: rgb(37, 48, 15)
+        color: rgb(37, 48, 15);
     }
 }
-h2{
+h2 {
     font-size: 30px;
     font-family: $Roboto;
-
-
 }
-.topBanner{
-    background-image:url("../images/top-banner.png");
+.topBanner {
+    background-image: url("../images/top-banner.png");
     background-repeat: no-repeat;
-
 }
-section{
+section {
     height: 400px;
     text-align: $textJustify;
     padding-bottom: 100px;
-    a{
+    a {
         @extend %buttonBG;
-        border:none;
-        width:200px;
+        border: none;
+        width: 200px;
         padding: 10px 0;
         border-radius: 10px;
-        color:#fff;
+        color: #fff;
         font-size: 20px;
         text-decoration: none;
         display: inline-block;
@@ -113,13 +113,40 @@ section{
         text-transform: uppercase;
     }
 }
-.dreamArea{
+.dreamArea {
     background-image: url("../images/dream-bg.png");
     background-repeat: no-repeat;
     background-position: right;
 }
-.experienceArea{
-    h2{
+.experienceArea {
+    background-image: url("../images//exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    h2 {
         text-align: $textLeft;
+    }
+    .half-width {
+        box-shadow: 10px 10px 40px gray;
+        border-radius: 10px;
+        height: 80%;
+        background:#fff;
+    }
+    #full-stack {
+        border-image: linear-gradient(180deg, lightSalmon, tomato);
+        // @extend %singleBoder;
+        border-left: 7px solid;
+        border-image-slice: 1;
+    }
+    #bany-web {
+        border-image: linear-gradient(180deg, blue, cyan);
+        // @extend %singleBoder;
+        border-left: 7px solid;
+        border-image-slice: 1;
+    }
+}
+footer{
+    p{
+        text-align: $textCenter;
+        font-size: 12px;
     }
 }

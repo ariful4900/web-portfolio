@@ -10,7 +10,8 @@ body, h1, nav ul {
 section a {
   background-image: linear-gradient(to right, lightSalmon, tomato); }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none; }
 
 body {
@@ -88,7 +89,28 @@ section {
   background-repeat: no-repeat;
   background-position: right; }
 
-.experienceArea h2 {
-  text-align: left; }
+.experienceArea {
+  background-image: url("../images//exp-bg.png");
+  background-repeat: no-repeat;
+  background-position: left; }
+  .experienceArea h2 {
+    text-align: left; }
+  .experienceArea .half-width {
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 10px;
+    height: 80%;
+    background: #fff; }
+  .experienceArea #full-stack {
+    border-image: linear-gradient(180deg, lightSalmon, tomato);
+    border-left: 7px solid;
+    border-image-slice: 1; }
+  .experienceArea #bany-web {
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-left: 7px solid;
+    border-image-slice: 1; }
+
+footer p {
+  text-align: center;
+  font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */
